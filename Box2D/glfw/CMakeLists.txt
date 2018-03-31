@@ -1,0 +1,30 @@
+file(GLOB glfw_srcs 
+		"glfw3.h"
+		"context.c"
+		"init.c"
+		"input.c"
+		"monitor.c"
+		"vulkan.c"
+		"window.c" 
+
+		"x11_platform.h"
+		"xkb_unicode.h"
+		"linux_joystick.h"
+		"posix_time.h"
+		"posix_tls.h"
+		"glx_context.h"
+		"egl_context.h"
+		"x11_init.c"
+		"x11_monitor.c"
+		"x11_window.c"
+		"glx_context.h"
+		"glx_context.c"
+		"glext.h"
+		"xkb_unicode.c"
+		"linux_joystick.c"
+		"posix_time.c"
+		"posix_tls.c"
+		"glx_context.c"
+		"egl_context.c")
+
+add_library(glfw STATIC ${glfw_srcs})

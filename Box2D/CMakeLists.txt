@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.5)
+set (CMAKE_CXX_STANDARD 11)
+project (box2d)
+
+include_directories(.)
+add_subdirectory(Box2D)
+add_subdirectory(HelloWorld)
+add_subdirectory(imgui)
+add_subdirectory(glew)
+add_subdirectory(glfw)
+add_subdirectory(Testbed)
